@@ -1,0 +1,313 @@
+{
+  "common": {
+    "actions": {
+      "back": "Back",
+      "cancel": "Cancel",
+      "close": "Close",
+      "continue": "Continue",
+      "copy": "Copy",
+      "refreshPage": "Refresh page",
+      "retry": "Try again",
+      "save": "Save",
+      "show": "Show",
+      "viewAll": "View all"
+    },
+    "errors": {
+      "required": "This field is required",
+      "selectToContinue": "Select to continue",
+      "unexpected": "Something went wrong. Please try again."
+    },
+    "copied": "COPIED",
+    "loading": "Loading",
+    "workInProgress": "WIP",
+    "notAvailable": "Not available",
+    "notAvailableShort": "N/A"
+  },
+  "shell": {
+    "language": {
+      "change": "Change language, current {{language}}",
+      "english": "English",
+      "russian": "Русский",
+      "french": "Français",
+      "spanish": "Español"
+    }
+  },
+  "auth": {
+    "signIn": {
+      "title": "Sign In",
+      "description": "Enter your email and password to log in",
+      "forgotPassword": "Forgot your password?"
+    },
+    "forgotPassword": {
+      "title": "Forgot your password?",
+      "description": "Enter your email address and we'll send you a link to reset your password.",
+      "send": "Send reset link"
+    },
+    "checkEmail": {
+      "title": "Check your email",
+      "description": "If an account exists for this email address, we've sent instructions to reset your password.",
+      "delivery": "Check your spam folder if you don't see it. Delivery may take a few minutes."
+    },
+    "resetPassword": {
+      "title": "Reset Password",
+      "description": "Enter and confirm your new password",
+      "confirmPassword": "Confirm password",
+      "minimumLength": "Password must be at least 8 characters",
+      "success": "Your password has been reset. Sign in with your new password."
+    },
+    "backToSignIn": "Back to Sign In",
+    "fields": {
+      "email": "Email",
+      "password": "Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password"
+    },
+    "placeholders": {
+      "email": "Enter your email",
+      "password": "Enter your password",
+      "newPassword": "Create a password",
+      "confirmPassword": "Repeat your password",
+      "code": "Enter 6-digit code"
+    },
+    "authenticator": {
+      "title": "Set Up Authenticator",
+      "step1": "Download Google Authenticator, Authy, or any TOTP app",
+      "step2": "Tap “Open in authenticator app” below, or open the app and pick “Enter a setup key”",
+      "step3": "Confirm the account (XPlace Partners) is added",
+      "step4": "Enter the 6-digit code the app shows you",
+      "open": "Open in Authenticator App",
+      "hint": "iPhone may open Apple Password. For other apps, copy the key.",
+      "qr": "Scan to add XPlace Partners to your authenticator app",
+      "qrUnavailable": "QR code unavailable. Please copy the setup key below.",
+      "setupKey": "Setup key",
+      "copyKey": "Copy Authenticator Key",
+      "showQr": "Show QR code (for another device)",
+      "copyError": "Unable to copy. Please select and copy the key manually.",
+      "setupError": "Unable to load authenticator setup. Please try again."
+    },
+    "twoFactor": {
+      "title": "2FA authentication",
+      "description": "Enter the verification code from your two-factor authentication (2FA) app. These codes are updated regularly for security purposes, so use the combination that is current at the moment.",
+      "code": "Code from authenticator app"
+    },
+    "setPassword": {
+      "title": "Set Your Password",
+      "description": "Create a permanent password for your account",
+      "requirementsTitle": "Password Requirements",
+      "requirements": "Minimum 8 characters. Avoid common or entirely numeric passwords. Your new password must be different from your current password.",
+      "continue": "Set Password & Continue"
+    },
+    "errors": {
+      "email": "Enter a valid email address.",
+      "credentials": "Enter your email and password.",
+      "password": "Your password must meet all the requirements below.",
+      "confirmation": "Passwords do not match.",
+      "incorrectCode": "Incorrect code",
+      "usedCode": "This code has already been used. Wait for the next code.",
+      "session": "Unable to continue. Please sign in again.",
+      "invalidCredentials": "Invalid email or password.",
+      "accountLocked": "Too many attempts. Try again later.",
+      "rateLimited": "Too many requests. Please try again later.",
+      "invalidPassword": "Use at least 8 characters. Avoid common or entirely numeric passwords and choose a password different from your current one.",
+      "invalidRequest": "Check the entered information and try again.",
+      "invalidToken": "This reset link is invalid or has expired. Return to sign in to request a new link.",
+      "network": "Unable to connect. Please check your connection and try again.",
+      "csrf": "Unable to confirm the request. Please try again.",
+      "twoFactorRequired": "Unable to sign out. Please try again later.",
+      "unexpected": "Something went wrong. Please try again."
+    },
+    "signOut": "Log Out"
+  },
+  "profile": {
+    "title": "Partner Profile",
+    "error": "Unable to load your profile. Please try again.",
+    "account": {
+      "title": "Account Information",
+      "fullName": "Full name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "company": "Company"
+    },
+    "security": {
+      "title": "Security Settings",
+      "description": "Review your password strength and control active sessions to prevent unauthorized access.",
+      "changePassword": "Change Password",
+      "signOutAll": "Sign out all sessions",
+      "sessionsRevoked": "Other sessions signed out. Your current session stays active."
+    },
+    "support": {
+      "title": "Need to change account details?",
+      "description": "To update your registered company name, partner ID, or primary role, please submit an official request to our partner support desk."
+    },
+    "errors": {
+      "currentPassword": "Current password is incorrect."
+    },
+    "password": {
+      "title": "Set up new password",
+      "description": "Change password for your account",
+      "currentPassword": "Current password",
+      "currentPlaceholder": "Enter current password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm new password",
+      "newPlaceholder": "Enter new password",
+      "confirmPlaceholder": "Confirm new password",
+      "requirementsTitle": "Password Requirements",
+      "requirements": "Minimum 8 characters. Avoid common or entirely numeric passwords. Your new password must be different from your current password.",
+      "submit": "Change Password & Continue",
+      "changed": "Password changed. Other sessions have been signed out."
+    }
+  },
+  "home": {
+    "portalName": "PARTNER PORTAL",
+    "title": "Home",
+    "totalSpend": "Total Spend Volume",
+    "spend": "Spend Volume",
+    "commission": "Commission earned",
+    "payout": "Available for payout: {{value}}",
+    "purchases": "Number of purchases",
+    "completed": "{{value}} completed",
+    "pending": "{{value}} pending",
+    "averagePurchase": "Avg purchase value",
+    "activeClients": "Active clients",
+    "overdue": "{{value}} overdue",
+    "suspended": "{{value}} suspended",
+    "overviewError": "Unable to load your dashboard. Please try again.",
+    "chart": {
+      "period": "monthly, 12 months",
+      "empty": "No monthly activity available."
+    },
+    "clients": {
+      "title": "Clients",
+      "search": "Search by name, email or phone",
+      "filter": "Filter clients by status",
+      "status": {
+        "all": "All",
+        "active": "Active",
+        "onboarding": "Onboarding",
+        "partner-review": "Partner review",
+        "limit-review": "Limit review",
+        "overdue": "Overdue",
+        "suspended": "Suspended",
+        "offboarding-pending": "Offboarding pending",
+        "closed": "Closed",
+        "contact-support": "Contact support"
+      },
+      "columns": {
+        "email": "Email",
+        "phone": "Phone",
+        "name": "Client name",
+        "registeredAt": "Registration date",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "open": "Open",
+      "actions": {
+        "contactSupport": "Contact Support",
+        "aumReview": "AUM review",
+        "requestOffboarding": "Request offboarding"
+      },
+      "actionInfo": {
+        "limit-review": {
+          "title": "A credit limit is being set up for the client.",
+          "description": "The account will be activated soon."
+        },
+        "onboarding": {
+          "title": "The client has not completed the onboarding process.",
+          "description": "The user started the KYC process but did not finish."
+        },
+        "closed": {
+          "title": "Account closed.",
+          "description": "The client's account was closed on {{date}}. The card has been cancelled and no further transactions can be made."
+        }
+      },
+      "rowsPerPage": "Rows per page",
+      "rows": "{{count}} rows",
+      "actionsFor": "Actions for {{name}}",
+      "showing": "Showing {{count}} of {{total}} clients",
+      "pagination": "Client pages",
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Go to page {{page}}",
+      "pageOf": "Page {{page}} of {{total}}",
+      "error": "Unable to load clients. Please try again.",
+      "empty": "No clients found.",
+      "unavailable": "This client is no longer available. Please refresh the client list.",
+      "reset": "Clear filters",
+      "partnerReview": {
+        "noticeTitle": "Confirm the AUM and the client's identity.",
+        "noticeDescription": "Complete the following to approve the client and move them to Limit Review.",
+        "investableAssets": "Investable Assets ($)",
+        "cashAssets": "Cash Assets ($)",
+        "invalidAmount": "Enter a valid amount of zero or more.",
+        "uploadLabel": "Upload AUM Confirmation",
+        "uploadPrompt": "Drag & drop or click to upload",
+        "acceptedFormats": "Accepted formats: PDF, PNG, JPG up to 25MB",
+        "uploadComplete": "Upload complete",
+        "uploadRetry": "Try again or choose another file",
+        "uploadFailedLabel": "(FAILED)",
+        "uploadFailed": "Unable to upload the file. Please try again.",
+        "fileRequired": "Upload an AUM confirmation file.",
+        "tooLarge": "Upload failed. File exceeds 25MB limit.",
+        "invalidType": "Choose a PDF, JPG or PNG file.",
+        "tooManyFiles": "Choose one file at a time.",
+        "removeFile": "Remove file",
+        "confirm": "I confirm the information above is accurate.",
+        "confirmRequired": "Confirm the information before sending.",
+        "submitFailed": "Unable to send the review. Please try again.",
+        "send": "Send"
+      },
+      "payment": {
+        "paymentMethod": "Payment method",
+        "crypto": "Crypto",
+        "eurRates": "EUR rates",
+        "fxRate": "FX rate",
+        "statementInEur": "Statement in EUR",
+        "identity": "Identity",
+        "bic": "BIC",
+        "reference": "Reference",
+        "depositAddress": "Deposit address",
+        "depositQr": "Deposit address QR code",
+        "qrUnavailable": "QR code unavailable. Please copy the deposit address below.",
+        "cryptoDescription": "Send USDC on the ERC-20 network to your personal deposit address below. USDC is credited 1:1 to USD. Funds will appear in your account after network confirmation and processing — typically within 24 hours.",
+        "statementOwed": "Statement owed",
+        "dueDate": "Due date",
+        "transferTo": "Transfer to",
+        "accountName": "Account name",
+        "beneficiaryAddress": "Beneficiary address",
+        "bankAddress": "Bank address",
+        "accountNumber": "Account number",
+        "routingNumber": "Routing number",
+        "thirdPartyUnavailable": "Transfers from third parties are not supported for this account.",
+        "bankUnavailable": "Bank payment details are currently unavailable.",
+        "bank": "Bank",
+        "iban": "IBAN",
+        "swift": "SWIFT",
+        "email": "Email",
+        "copyValue": "Copy {{label}}",
+        "copyError": "Unable to copy. Please try again.",
+        "suspended": {
+          "title": "Account suspended",
+          "description": "The client's card was suspended on {{date}} due to an unpaid balance of {{balance}}. Late fees continue to accrue daily.",
+          "instruction": "Pay {{amount}} to clear the balance and reactivate the card."
+        },
+        "overdue": {
+          "title": "Payment overdue",
+          "descriptionWithMocks": "{{balance}} was not paid by the due date. <policy>A late fee of {{rate}} per month (minimum {{minimum}}) is accruing daily.</policy> The client's card will be suspended on <date>{{date}}</date> if the balance remains unpaid.",
+          "instruction": "Pay {{amount}} on the client's behalf"
+        },
+        "offboarding-pending": {
+          "title": "Account closed – balance outstanding",
+          "description": "The client's account was closed on {{date}} with an unpaid balance of {{balance}} as of {{asOf}}. Late fees continue to accrue daily until the balance is settled.",
+          "instruction": "Pay {{amount}} on the client's behalf.",
+          "contactTeam": "Contact Team"
+        },
+        "proofTitle": "After paying your statement balance, please send proof of payment to the email address below.",
+        "proofDescription": "Our team will review the payment and proceed with the next steps to settle the outstanding balance and reactivate card."
+      }
+    }
+  },
+  "route": {
+    "errorTitle": "Something went wrong.",
+    "errorDescription": "Refresh the page and try again."
+  }
+}

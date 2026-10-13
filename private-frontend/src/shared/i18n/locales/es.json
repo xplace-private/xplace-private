@@ -1,0 +1,504 @@
+{
+  "common": {
+    "brandEyebrow": "XPLACE PRIVATE",
+    "actions": {
+      "account": "Cuenta",
+      "back": "Atrás",
+      "cancel": "Cancelar",
+      "close": "Cerrar",
+      "continue": "Continuar",
+      "copy": "Copiar",
+      "dispute": "Reclamar",
+      "refreshPage": "Actualizar página",
+      "retry": "Intentar de nuevo",
+      "save": "Guardar",
+      "show": "Mostrar",
+      "signOut": "Cerrar sesión",
+      "viewAll": "Ver todo"
+    },
+    "errors": {
+      "required": "Este campo es obligatorio",
+      "selectToContinue": "Selecciona una opción para continuar",
+      "unexpected": "Algo salió mal. Inténtalo de nuevo."
+    },
+    "copied": "COPIADO",
+    "loading": "Cargando",
+    "notAvailable": "No disponible",
+    "notAvailableShort": "N/D",
+    "selectCountry": "Selecciona un país"
+  },
+  "shell": {
+    "openWhatsApp": "Abrir WhatsApp",
+    "concierge": "Concierge",
+    "agreement": "Acuerdo",
+    "privacy": "Privacidad",
+    "language": {
+      "change": "Cambiar idioma, actual: {{language}}",
+      "english": "English",
+      "russian": "Русский",
+      "french": "Français",
+      "spanish": "Español"
+    }
+  },
+  "route": {
+    "errorTitle": "Algo salió mal.",
+    "errorDescription": "Actualiza la página e inténtalo de nuevo.",
+    "loadingAccount": "Cargando la cuenta"
+  },
+  "auth": {
+    "authenticator": {
+      "eyebrow": "Configuración de 2FA",
+      "setupTitle": "Escanea el código QR",
+      "setupDescription": "Abre tu aplicación de autenticación y escanea este código o copia la clave manualmente.",
+      "confirmTitle": "Introduce el código de 6 dígitos",
+      "confirmDescription": "De tu aplicación de autenticación. Los códigos se actualizan cada 30 segundos.",
+      "loginTitle": "Autenticación 2FA",
+      "loginDescription": "Introduce el código actual de tu aplicación de autenticación de dos factores. Los códigos se actualizan regularmente por seguridad.",
+      "step1": "Descarga Google Authenticator, Authy o cualquier aplicación TOTP",
+      "step2": "Pulsa «Abrir en la app de autenticación» abajo o abre la app y elige «Introducir una clave de configuración»",
+      "step3": "Confirma que la cuenta (XPlace) se ha añadido",
+      "step4": "Introduce el código de 6 dígitos que muestra la app",
+      "open": "Abrir en la app de autenticación",
+      "hint": "En iPhone puede abrirse Contraseñas de Apple. Para otras apps, copia la clave.",
+      "qr": "Escanea para añadir XPlace a tu app de autenticación",
+      "qrUnavailable": "Código QR no disponible. Copia la clave de configuración de abajo.",
+      "setupKey": "Clave de configuración",
+      "copyKey": "Copiar clave de autenticación",
+      "copyError": "No se pudo copiar. Selecciona y copia la clave manualmente.",
+      "setupError": "No se pudo cargar la configuración. Inténtalo de nuevo.",
+      "paste": "Pegar código",
+      "pasteError": "No se pudo leer el portapapeles. Pega o introduce el código manualmente.",
+      "incorrectCode": "Código incorrecto",
+      "tooManyAttempts": "Demasiados intentos. Inténtalo más tarde.",
+      "verify": "Verificar",
+      "signOut": "Cerrar sesión"
+    },
+    "phone": {
+      "title": "Solicita una cuenta o inicia sesión",
+      "description": "Introduce tu número de móvil. Te enviaremos un código de seis dígitos por WhatsApp.",
+      "countryPicker": "Elegir prefijo. Seleccionado: {{country}} {{code}}",
+      "searchCountry": "Buscar país o prefijo",
+      "noCountries": "No se encontraron países",
+      "inputLabel": "Número de móvil",
+      "requesting": "Solicitando código"
+    },
+    "code": {
+      "title": "Introduce tu código",
+      "sentTo": "Enviado por WhatsApp al {{phone}}.",
+      "label": "Código de seis dígitos",
+      "verifying": "Verificando código",
+      "requesting": "Solicitando código",
+      "resend": "Reenviar código",
+      "resendIn": "Reenviar en {{time}}",
+      "resendAvailableIn": "Podrás reenviar el código en {{time}}",
+      "differentNumber": "Usar otro número",
+      "hourShort": "h",
+      "minuteShort": "min",
+      "secondShort": "s",
+      "unitSeparator": "\u00a0"
+    },
+    "recovery": {
+      "title": "No se pudo restaurar la sesión",
+      "description": "No se pudo restaurar la sesión. Inténtalo de nuevo."
+    },
+    "errors": {
+      "phoneRequired": "Introduce un número para continuar",
+      "codeRequired": "Introduce el código para continuar",
+      "continue": "No se pudo continuar. Inténtalo de nuevo.",
+      "retryAfter": "Inténtalo de nuevo en {{time}}.",
+      "invalidPhone": "Número de teléfono no válido.",
+      "phoneTooLong": "El número de teléfono es demasiado largo.",
+      "invalidPhoneFormat": "Introduce un número internacional válido.",
+      "whatsappUnavailable": "La verificación por WhatsApp no está disponible.",
+      "invalidOrExpiredCode": "El código no es válido o ha caducado.",
+      "invalidCode": "Código incorrecto. Introduce un código válido para continuar",
+      "signOut": "No se pudo cerrar la sesión. Inténtalo de nuevo."
+    }
+  },
+  "onboarding": {
+    "stepEyebrow": "SOLICITUD · PASO {{step}} DE 6",
+    "continuing": "Continuando",
+    "residency": {
+      "title": "¿Dónde vives?",
+      "description": "Los acuerdos y controles de identidad varían según el país.",
+      "label": "Residencia",
+      "us": "Estados Unidos",
+      "world": "Resto del mundo"
+    },
+    "occupation": {
+      "title": "¿Cuál es tu ocupación?",
+      "description": "Busca en la lista o elige Otra.",
+      "search": "Buscar ocupaciones",
+      "loading": "Cargando ocupaciones",
+      "empty": "No se encontraron ocupaciones.",
+      "label": "Ocupación",
+      "loadError": "No se pudieron cargar las ocupaciones. Inténtalo de nuevo."
+    },
+    "income": {
+      "title": "¿Cuáles son tus ingresos anuales?",
+      "description": "En dólares estadounidenses, antes de impuestos.",
+      "label": "Ingresos anuales",
+      "under25": "Menos de 25.000 USD",
+      "from25To50": "25.000 – 50.000 USD",
+      "from50To100": "50.000 – 100.000 USD",
+      "from100To180": "100.000 – 180.000 USD",
+      "over180": "Más de 180.000 USD"
+    },
+    "spend": {
+      "title": "¿Cuánto esperas gastar al mes?",
+      "description": "Una estimación es suficiente. No determina tu límite.",
+      "label": "Gasto mensual estimado",
+      "under1": "Menos de 1.000 USD",
+      "from1To5": "1.000 – 5.000 USD",
+      "from5To25": "5.000 – 25.000 USD",
+      "from25To50": "25.000 – 50.000 USD",
+      "over50": "Más de 50.000 USD"
+    },
+    "purpose": {
+      "title": "¿Para qué usarás la cuenta?",
+      "label": "Uso de la cuenta",
+      "personal": "Gastos personales",
+      "business": "Gastos profesionales",
+      "investments": "Inversiones",
+      "other": "Otro"
+    },
+    "agreements": {
+      "title": "Antes de verificar tu identidad",
+      "description": "Lee y acepta los acuerdos aplicables a tu cuenta.",
+      "cardholderTitle": "Acuerdo del titular de la tarjeta (clientes de EE. UU.)",
+      "privacyTitle": "Política de privacidad",
+      "label": "Aceptación de acuerdos",
+      "accept": "He leído y acepto ambos acuerdos"
+    }
+  },
+  "verification": {
+    "continue": {
+      "eyebrow": "SOLICITUD · IDENTIDAD",
+      "title": "Continuar la verificación de identidad",
+      "description": "Tres pasos, unos tres minutos.",
+      "action": "Continuar verificación"
+    },
+    "preparing": "Preparando la verificación",
+    "status": {
+      "eyebrow": "SOLICITUD",
+      "identity": "Identidad",
+      "limit": "Límite",
+      "limitValue": "Hasta 100.000 USD",
+      "card": "Tarjeta",
+      "cardValue": "Visa Platinum",
+      "membership": "Membresía anual",
+      "membershipValue": "250 USD",
+      "application": "Solicitud",
+      "closed": "Cerrada",
+      "underReview": {
+        "title": "Verificando tu identidad",
+        "description": "Normalmente tarda unos minutos. Puedes cerrar esta página — te escribiremos por WhatsApp en cuanto termine.",
+        "label": "En revisión"
+      },
+      "verified": {
+        "title": "Cuenta pendiente",
+        "description": "Tu identidad está verificada. La cuenta se abrirá cuando tu asesor confirme la presentación y definamos tu límite.",
+        "label": "Verificada"
+      },
+      "rejected": {
+        "title": "No pudimos abrir tu cuenta",
+        "description": "No podemos continuar por ahora. Soporte puede decirte qué hace falta y si se puede resolver.",
+        "label": "Rechazada"
+      }
+    }
+  },
+  "home": {
+    "statement": {
+      "today": "Hoy",
+      "days_one": "{{count}} día",
+      "days_other": "{{count}} días",
+      "dueSummary": "hasta que se emita tu estado de cuenta; después, {{amount}} vencerá el {{date}}.",
+      "available": "Disponible para gastar",
+      "periodDue": "Periodo actual, vence el {{date}}",
+      "period": "Periodo actual",
+      "loadError": "No se pudo cargar el saldo. Inténtalo de nuevo.",
+      "dueDate": "Fecha de vencimiento",
+      "dueDateInfoLabel": "Información sobre el vencimiento",
+      "dueDateInfo": "Tu estado de cuenta se emite el día 1 de cada mes y vence el día 5. El importe queda fijado el día 1 — todo lo que gastes después pasa al siguiente estado. Los cargos comienzan tres días laborables después del vencimiento.",
+      "payNow": "Pagar ahora",
+      "makePayment": "Hacer un pago"
+    },
+    "activity": "Actividad",
+    "cards": {
+      "title": "Tus tarjetas",
+      "count_one": "{{count}} de 3 tarjetas. Todas emitidas a tu nombre. Cada una tiene su propio número y se bloquea por separado.",
+      "count_other": "{{count}} de 3 tarjetas. Todas emitidas a tu nombre. Cada una tiene su propio número y se bloquea por separado.",
+      "new": "Nueva",
+      "empty": "Aún no hay tarjetas.",
+      "showing": "Mostrando",
+      "cardAlt": "Tarjeta XPlace Visa Platinum",
+      "details": "Datos de la tarjeta",
+      "number": "Número de tarjeta",
+      "expires": "Caduca",
+      "securityCode": "Código de seguridad",
+      "hidesIn": "Se ocultan en {{seconds}} s",
+      "hideDetails": "Ocultar datos",
+      "showDetails": "Mostrar datos",
+      "readyWallet": "Lista para Apple Pay y Google Pay",
+      "activate": "Activar",
+      "freeze": "Bloquear",
+      "unfreeze": "Desbloquear",
+      "rename": "Renombrar",
+      "setPin": "Establecer PIN",
+      "changePin": "Cambiar PIN",
+      "status": {
+        "active": "Activa",
+        "frozen": "Bloqueada",
+        "manufacturing": "En fabricación",
+        "inTransit": "En camino",
+        "shouldBeDelivered": "Debería haberse entregado",
+        "notActivated": "Sin activar"
+      },
+      "kind": {
+        "virtual": "Virtual",
+        "physical": "Física"
+      },
+      "errors": {
+        "load": "No se pudieron cargar las tarjetas. Inténtalo de nuevo.",
+        "status": "No se pudo cambiar el estado. Inténtalo de nuevo.",
+        "issue": "No se pudo emitir la tarjeta. Inténtalo de nuevo.",
+        "pin": "No se pudo actualizar el PIN. Inténtalo de nuevo.",
+        "details": "No se pudieron cargar los datos. Inténtalo de nuevo."
+      },
+      "notifications": {
+        "activated": "Tarjeta activada",
+        "frozen": "Tarjeta bloqueada",
+        "issued": "Tarjeta emitida",
+        "renamed": "Tarjeta renombrada",
+        "unfrozen": "Tarjeta desbloqueada",
+        "pinUpdated": "PIN actualizado"
+      }
+    },
+    "cardDetails": {
+      "copy": "Copiar"
+    },
+    "gettingStarted": {
+      "title": "Primeros pasos",
+      "walletTitle": "Añadir a Apple Pay y Google Pay",
+      "walletDescription": "Paga con tu móvil en segundos",
+      "physicalTitle": "Pedir tu tarjeta física",
+      "physicalDescription": "Entrega por mensajero en hasta 7 días laborables"
+    },
+    "newCard": {
+      "title": "Nueva tarjeta",
+      "description": "Lista para usar al instante con la misma línea de crédito.",
+      "name": "Nombre de la tarjeta",
+      "issuing": "Emitiendo tarjeta"
+    },
+    "renameCard": {
+      "title": "Renombrar tarjeta",
+      "description": "Solo para tu referencia. El nombre impreso en la tarjeta no cambia.",
+      "renaming": "Cambiando nombre"
+    },
+    "delivery": {
+      "phoneCountry": "Selecciona el país del número de teléfono",
+      "title": "Dirección de entrega",
+      "description": "¿Dónde debemos enviarla? Los mensajeros no entregan en apartados postales.",
+      "address": "Dirección",
+      "addressPlaceholder": "Edificio y calle",
+      "apartment": "Apartamento o planta",
+      "regionPlaceholder": "Dubái",
+      "optional": "Opcional",
+      "city": "Ciudad",
+      "cityPlaceholder": "Dubái",
+      "postcode": "Código postal",
+      "country": "País",
+      "orderFee": "Se cargará una comisión de {{amount}} a tu cuenta al realizar el pedido. Al hacer el pedido, aceptas este cargo.",
+      "order": "Pedir tarjeta",
+      "ordering": "Pidiendo tarjeta física",
+      "region": "Estado / región",
+      "phone": "Número de teléfono",
+      "errors": {
+        "checking": "Comprobando el resultado del pago. Espera o actualiza.",
+        "request": "No se pudo completar la solicitud. Inténtalo de nuevo.",
+        "postcode": "Introduce un código postal válido para el país seleccionado.",
+        "phone": "Introduce un número válido para el país seleccionado.",
+        "tooLong": "Este valor es demasiado largo.",
+        "invalid": "Revisa este campo.",
+        "recipient": "Los datos del titular no están disponibles. Inténtalo más tarde.",
+        "balance": "Saldo insuficiente.",
+        "credit": "Tu línea de crédito no está disponible.",
+        "limit": "Se alcanzó el límite de emisión de tarjetas. Contacta con soporte.",
+        "unavailable": "El pedido de tarjetas físicas no está disponible actualmente.",
+        "existing": "Ya existe un pedido o una tarjeta pendiente de activación.",
+        "failed": "No se pudo emitir la tarjeta. Contacta con soporte.",
+        "refresh": "Tarjeta emitida. No se pudo actualizar la lista. Inténtalo de nuevo.",
+        "rename": "Tarjeta emitida, pero no se guardó su nombre. Puedes cambiarlo desde el menú de la tarjeta.",
+        "save": "No se pudo guardar el borrador. Los datos siguen disponibles hasta que recargues la página."
+      }
+    },
+    "activation": {
+      "title": "Activar tarjeta física",
+      "description": "Introduce los últimos cuatro dígitos y la fecha de caducidad impresos en la tarjeta.",
+      "lastFour": "Últimos cuatro dígitos",
+      "expiry": "Caducidad",
+      "fourDigits": "Introduce cuatro dígitos",
+      "validExpiry": "Introduce una fecha de caducidad válida",
+      "errors": {
+        "request": "No se pudo activar la tarjeta. Inténtalo de nuevo.",
+        "mismatch": "Los datos de la tarjeta no coinciden. Revisa los dígitos y la fecha de caducidad.",
+        "locked": "Demasiados intentos incorrectos. Inténtalo más tarde o contacta con soporte."
+      }
+    },
+    "pin": {
+      "confirmTitle": "Confirmar PIN",
+      "changeTitle": "Cambiar PIN",
+      "setTitle": "Establecer PIN",
+      "confirmDescription": "Introduce de nuevo los mismos cuatro dígitos",
+      "chooseDescription": "Elige un PIN de cuatro dígitos para {{card}}",
+      "label": "PIN",
+      "incomplete": "Introduce un PIN de cuatro dígitos",
+      "mismatch": "Los PIN no coinciden",
+      "saving": "Guardando PIN",
+      "errors": {
+        "fourDigits": "El PIN debe tener 4 dígitos.",
+        "repeated": "El PIN no puede contener solo dígitos iguales.",
+        "sequence": "El PIN no puede ser una secuencia simple.",
+        "consecutive": "El PIN no puede tener más de 2 dígitos idénticos consecutivos.",
+        "weak": "El PIN es demasiado débil.",
+        "alternating": "El PIN no puede tener un patrón alternado."
+      }
+    },
+    "paymentPlans": {
+      "title": "Planes de pago",
+      "description": "Compras que elegiste pagar a plazos. Las cuotas se añaden a cada estado de cuenta.",
+      "openDetails": "Abrir los detalles del plan de pago de {{merchant}}",
+      "startAria": "Iniciar un plan de pago para {{merchant}}",
+      "settleAria": "Liquidar el plan de pago de {{merchant}}",
+      "progressLabel": "Progreso del plan de pago de {{merchant}}",
+      "summary": "{{months}} meses · quedan {{remaining}} de {{total}} · desde {{date}}",
+      "monthly": "{{amount}}/mes",
+      "monthlyLabel": "Mensual",
+      "perMonth": "/mes",
+      "aprFixed": "TAE fija del {{rate}} %",
+      "remainingOf": "restantes de {{total}}",
+      "term": "Plazo",
+      "rate": "Tasa",
+      "planFee": "Comisión del plan",
+      "progress": "Progreso",
+      "paid": "{{percent}} % pagado",
+      "settleToday": "Liquidar hoy",
+      "settleInfo": "Puedes liquidar el plan por completo en cualquier momento. La comisión fija se mantiene, y pagarlo antes libera antes tu límite disponible.",
+      "settleAction": "Liquidar ahora · {{amount}}",
+      "startTitle": "Pagar a plazos",
+      "totalRepayable": "Total a devolver",
+      "startAction": "Iniciar plan — {{amount}}/mes",
+      "termsLabel": "Condiciones del plan de pago",
+      "months_one": "{{count}} mes",
+      "months_other": "{{count}} meses",
+      "totalCost": "{{total}} total · coste: {{cost}}",
+      "settleTitle": "Liquidar el plan",
+      "settleDescription": "Paga hoy todo el saldo restante, incluida la comisión fija. Esto cierra el plan y libera tu límite disponible.",
+      "confirm": "Confirmar · {{amount}}",
+      "errors": {
+        "load": "Los planes de pago no están disponibles. Inténtalo de nuevo.",
+        "update": "No se pudo actualizar el plan. Inténtalo de nuevo."
+      },
+      "notifications": {
+        "started": "PLAN INICIADO · {{amount}}/MES",
+        "settled": "PLAN LIQUIDADO"
+      }
+    },
+    "concierge": {
+      "cardholderInfo": "Para poner una tarjeta a nombre de otra persona, debe completar su propia verificación. Escribe al concierge y lo organizaremos.",
+      "title": "¿Necesitas algo?",
+      "description": "El concierge responde las 24 horas en tu idioma.",
+      "message": "Escribir al concierge",
+      "limitReview": "Revisión del límite"
+    }
+  },
+  "transactions": {
+    "title": "Transacciones",
+    "periodsLabel": "Periodos de transacciones",
+    "thisPeriod": "Periodo actual",
+    "spent": "Gastado",
+    "due": "Vence el {{date}}",
+    "count_one": "{{count}} transacción",
+    "count_other": "{{count}} transacciones",
+    "listLabel": "Transacciones",
+    "loadingList": "Cargando transacciones",
+    "empty": "No hay actividad. Empieza a usar la tarjeta para verla",
+    "planTag": "PLAN",
+    "openDetails": "Abrir los detalles de la transacción {{merchant}}",
+    "reversedAmount": "{{amount}}, anulada",
+    "payOverTime": "Pagar a plazos",
+    "status": {
+      "completed": "Completada",
+      "pending": "Pendiente",
+      "refunded": "Reembolsada",
+      "declined": "Rechazada",
+      "reversed": "Anulada"
+    },
+    "details": {
+      "category": "Categoría",
+      "date": "Fecha",
+      "location": "Ubicación",
+      "card": "Tarjeta",
+      "rate": "Tasa",
+      "plan": "Plan",
+      "refundedLine1": "Reembolsada por el comercio.",
+      "refundedLine2": "Abonada en este estado de cuenta.",
+      "declineReasons": {
+        "insufficientFunds": "Fondos insuficientes",
+        "limits": "Límites superados",
+        "blockedMerchant": "Comerciante bloqueado",
+        "incorrectCardData": "Comprueba los datos de la tarjeta e inténtalo de nuevo",
+        "tryAgain": "Inténtalo de nuevo en un momento"
+      },
+      "reversedLine1": "El comercio liberó la preautorización.",
+      "reversedLine2": "No se realizó ningún cargo.",
+      "planLine": "En un plan de pago a plazos",
+      "remaining": "Quedan {{amount}}."
+    },
+    "errors": {
+      "load": "No se pudieron cargar las transacciones. Inténtalo de nuevo."
+    }
+  },
+  "payment": {
+    "loadingCryptoDetails": "Preparando los datos para el pago con criptomonedas",
+    "beneficiaryAddress": "Dirección del beneficiario",
+    "bankAddress": "Dirección del banco",
+    "accountNumber": "Número de cuenta",
+    "iban": "IBAN",
+    "swift": "SWIFT / BIC",
+    "reference": "Referencia",
+    "routingNumber": "Número de ruta",
+    "currency": "Moneda",
+    "loadingBankDetails": "Preparando tus datos bancarios",
+    "detailsWaitExpired": "La preparación de los datos de pago está tardando más de lo esperado",
+    "bankUnavailable": "Los datos bancarios no están disponibles ahora",
+    "contactConcierge": "Escribe al concierge para obtener ayuda con los datos de tu cuenta.",
+    "title": "Hacer un pago",
+    "method": "Método de pago",
+    "rates": "TIPOS DE CAMBIO {{currency}}",
+    "fxRate": "Tipo de cambio",
+    "statementIn": "Importe en {{currency}}",
+    "swiftTransferTo": "Transferencia SWIFT a",
+    "sepaTransferTo": "Transferencia SEPA a",
+    "cryptoTransferTo": "Transferencia de cripto a",
+    "bankTransfer": "Transferencia bancaria",
+    "crypto": "Cripto",
+    "statementBalance": "Saldo del estado de cuenta",
+    "statementDate": "Fecha del estado de cuenta",
+    "transferTo": "Transferir a",
+    "beneficiaryName": "Beneficiario",
+    "bank": "Banco",
+    "copyDetail": "Copiar dato de pago",
+    "cryptoDescription": "Envía {{asset}} por {{network}} a tu dirección de depósito personal. {{asset}} se abona 1:1 en USD. Los fondos aparecerán en tu cuenta cuando la red confirme y finalice el procesamiento — en un plazo de 24 horas.",
+    "qrAlt": "Código QR de la dirección de depósito de {{asset}}",
+    "statementNotice": "Este importe cubre tu saldo total pendiente de todos los períodos. Los pagos se aplican primero a la deuda más antigua. Nuevos gastos o cargos antes de que llegue la transferencia pueden cambiar el saldo restante.",
+    "statementPlans": {
+      "toggle": "{{action}} ajustes del estado por planes de pago por un total de {{amount}}",
+      "expand": "Mostrar",
+      "collapse": "Ocultar",
+      "lower": "Reducir este estado en {{amount}}",
+      "description": "Divide una compra grande en cuotas y deja solo la primera en este estado de cuenta.",
+      "thisMonth": "de este mes"
+    }
+  }
+}

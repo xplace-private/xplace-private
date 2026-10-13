@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@import "@fontsource-variable/geist";
+
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --background: #000;
+  --foreground: #fafafa;
+  --card: #0a0a0a;
+  --primary: #fff;
+  --primary-foreground: #171717;
+  --secondary: #a3a3a3;
+  --secondary-foreground: #fafafa;
+  --muted: #525252;
+  --muted-foreground: #a3a3a3;
+  --accent: #c9bda8;
+  --accent-foreground: #fafafa;
+  --destructive: #ff6467;
+  --positive: #7fb08a;
+  --warning: #c9a86a;
+  --border: #262626;
+  --popover: #262626;
+  --popover-foreground: #fafafa;
+  --ring: #737373;
+  --card-number-shadow: color-mix(in srgb, var(--primary) 95%, transparent);
+  --qr-background: #fff;
+  --qr-foreground: #09090b;
+  --notice-accent: #c9bda8;
+  --notice-background: #0a0a0a;
+  --header-color: color-mix(in srgb, var(--background) 82%, transparent);
+}
+
+html {
+  background: var(--background);
+  color-scheme: dark;
+  max-width: 100%;
+  overflow-x: clip;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 100dvh;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
+}
+
+.app-toaster[data-x-position="center"] {
+  right: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  transform: none !important;
+}
+
+.app-toaster [data-sonner-toast] {
+  right: auto !important;
+  left: 50% !important;
+  translate: -50% 0;
+}
+
+html[data-show-private-on-header="false"] [data-private-header-label] {
+  display: none;
+}
+
+html[data-show-header-stroke="false"] [data-theme-header] {
+  border-bottom-color: transparent;
+}
+
+html[data-reverse-header-buttons="true"] [data-theme-header] [data-variant="outline"] {
+  background-color: transparent;
+  color: var(--primary-foreground);
+}
+
+html[data-reverse-header-buttons="true"]
+  [data-theme-header]
+  [data-variant="outline"]:is(:hover, :active, [data-state="open"]) {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@theme inline {
+  --font-sans: 'Geist Variable', sans-serif;
+  --shadow-xs: 0 1px 2px 0 color-mix(in srgb, var(--background) 10%, transparent);
+  --color-ring: var(--ring);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-border: var(--border);
+  --color-warning: var(--warning);
+  --color-positive: var(--positive);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-card: var(--card);
+  --color-header: var(--header-color);
+  --color-qr-background: var(--qr-background);
+  --color-qr-foreground: var(--qr-foreground);
+  --color-notice-accent: var(--notice-accent);
+  --color-notice-background: var(--notice-background);
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

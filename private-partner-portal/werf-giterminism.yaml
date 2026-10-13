@@ -1,0 +1,9 @@
+giterminismConfigVersion: 1
+config:
+  goTemplateRendering:
+    allowEnvVariables:
+      - BUILD_MODE
+      - SENTRY_AUTH_TOKEN
+  secrets:
+    allowEnvVariables:
+      - SENTRY_AUTH_TOKEN

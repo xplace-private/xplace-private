@@ -1,0 +1,11 @@
+nodeSelector:
+  dedicated: workload
+tolerations:
+  - key: dedicated
+    value: workload
+    operator: Equal
+    effect: NoSchedule
+
+frontend:
+  internal:
+    suffix: stage.kube-main.x.place

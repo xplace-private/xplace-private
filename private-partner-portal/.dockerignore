@@ -1,0 +1,17 @@
+.git/
+.gitlab-ci.yml
+.helm/
+node_modules/
+dist/
+docs/
+coverage/
+junit.xml
+dockerconfig.json
+.pnpm/
+.pnpm-store/
+*.log
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*.local

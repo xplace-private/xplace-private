@@ -1,0 +1,504 @@
+{
+  "common": {
+    "brandEyebrow": "XPLACE PRIVATE",
+    "actions": {
+      "account": "Account",
+      "back": "Back",
+      "cancel": "Cancel",
+      "close": "Close",
+      "continue": "Continue",
+      "copy": "Copy",
+      "dispute": "Dispute",
+      "refreshPage": "Refresh page",
+      "retry": "Try again",
+      "save": "Save",
+      "show": "Show",
+      "signOut": "Sign out",
+      "viewAll": "View all"
+    },
+    "errors": {
+      "required": "This field is required",
+      "selectToContinue": "Select to continue",
+      "unexpected": "Something went wrong. Please try again."
+    },
+    "copied": "COPIED",
+    "loading": "Loading",
+    "notAvailable": "Not available",
+    "notAvailableShort": "N/A",
+    "selectCountry": "Select country"
+  },
+  "shell": {
+    "openWhatsApp": "Open WhatsApp",
+    "concierge": "Concierge",
+    "agreement": "Agreement",
+    "privacy": "Privacy",
+    "language": {
+      "change": "Change language, current {{language}}",
+      "english": "English",
+      "russian": "Русский",
+      "french": "Français",
+      "spanish": "Español"
+    }
+  },
+  "route": {
+    "errorTitle": "Something went wrong.",
+    "errorDescription": "Refresh the page and try again.",
+    "loadingAccount": "Loading account"
+  },
+  "auth": {
+    "authenticator": {
+      "eyebrow": "2FA setup",
+      "setupTitle": "Scan the QR code",
+      "setupDescription": "Open your authenticator app and scan this code or copy manually.",
+      "confirmTitle": "Enter the 6-digit code",
+      "confirmDescription": "From your authenticator app. Codes refresh\nevery 30 seconds.",
+      "loginTitle": "2FA authentication",
+      "loginDescription": "Enter the current verification code from your two-factor authentication app. Codes update regularly for security.",
+      "step1": "Download Google Authenticator, Authy, or any TOTP app",
+      "step2": "Tap “Open in authenticator app” below, or open the app and pick “Enter a setup key”",
+      "step3": "Confirm the account (XPlace) is added",
+      "step4": "Enter the 6-digit code the app shows you",
+      "open": "Open in Authenticator App",
+      "hint": "iPhone may open Apple Password. For other apps, copy the key.",
+      "qr": "Scan to add XPlace to your authenticator app",
+      "qrUnavailable": "QR code unavailable. Please copy the setup key below.",
+      "setupKey": "Setup key",
+      "copyKey": "Copy Authenticator Key",
+      "copyError": "Unable to copy. Please select and copy the key manually.",
+      "setupError": "Unable to load authenticator setup. Please try again.",
+      "paste": "Paste code",
+      "pasteError": "Unable to read the clipboard. Please paste or enter the code manually.",
+      "incorrectCode": "Incorrect code",
+      "tooManyAttempts": "Too many attempts. Try again later.",
+      "verify": "Verify",
+      "signOut": "Log out"
+    },
+    "phone": {
+      "title": "Apply or sign in",
+      "description": "Enter your mobile number. We'll send a six-digit code on WhatsApp.",
+      "countryPicker": "Choose country code. Selected {{country}} {{code}}",
+      "searchCountry": "Search country or code",
+      "noCountries": "No countries found",
+      "inputLabel": "Mobile phone number",
+      "requesting": "Requesting code"
+    },
+    "code": {
+      "title": "Enter your code",
+      "sentTo": "Sent on WhatsApp to {{phone}}.",
+      "label": "Six-digit code",
+      "verifying": "Verifying code",
+      "requesting": "Requesting code",
+      "resend": "Resend code",
+      "resendIn": "Resend in {{time}}",
+      "resendAvailableIn": "Resend code available in {{time}}",
+      "differentNumber": "Use a different number",
+      "hourShort": "h",
+      "minuteShort": "m",
+      "secondShort": "s",
+      "unitSeparator": ""
+    },
+    "recovery": {
+      "title": "Unable to restore session",
+      "description": "Unable to restore session. Try again."
+    },
+    "errors": {
+      "phoneRequired": "Enter phone number to continue",
+      "codeRequired": "Enter code to continue",
+      "continue": "Unable to continue. Try again.",
+      "retryAfter": "Try again in {{time}}.",
+      "invalidPhone": "Invalid phone number.",
+      "phoneTooLong": "Phone number is too long.",
+      "invalidPhoneFormat": "Enter a valid international phone number.",
+      "whatsappUnavailable": "WhatsApp verification is unavailable.",
+      "invalidOrExpiredCode": "Invalid or expired code.",
+      "invalidCode": "Incorrect code. Enter valid code to continue",
+      "signOut": "Unable to sign out. Try again."
+    }
+  },
+  "onboarding": {
+    "stepEyebrow": "APPLICATION · STEP {{step}} OF 6",
+    "continuing": "Continuing",
+    "residency": {
+      "title": "Where do you live?",
+      "description": "Different agreements apply, and identity checks differ.",
+      "label": "Residency",
+      "us": "United States",
+      "world": "Rest of the world"
+    },
+    "occupation": {
+      "title": "What is your occupation?",
+      "description": "Search the list, or choose Other.",
+      "search": "Search occupations",
+      "loading": "Loading occupations",
+      "empty": "No occupations found.",
+      "label": "Occupation",
+      "loadError": "Unable to load occupations. Try again."
+    },
+    "income": {
+      "title": "What is your yearly income?",
+      "description": "In US dollars, before tax.",
+      "label": "Yearly income",
+      "under25": "Less than USD 25,000",
+      "from25To50": "USD 25,000 – 50,000",
+      "from50To100": "USD 50,000 – 100,000",
+      "from100To180": "USD 100,000 – 180,000",
+      "over180": "More than USD 180,000"
+    },
+    "spend": {
+      "title": "What monthly spend do you expect?",
+      "description": "A rough figure is fine. It does not set your limit.",
+      "label": "Expected monthly spend",
+      "under1": "Less than USD 1,000",
+      "from1To5": "USD 1,000 – 5,000",
+      "from5To25": "USD 5,000 – 25,000",
+      "from25To50": "USD 25,000 – 50,000",
+      "over50": "More than USD 50,000"
+    },
+    "purpose": {
+      "title": "What will you use the account for?",
+      "label": "Account purpose",
+      "personal": "Personal spending",
+      "business": "Business expenses",
+      "investments": "Investments",
+      "other": "Something else"
+    },
+    "agreements": {
+      "title": "Before we verify you",
+      "description": "Read and accept the agreements that apply to your account.",
+      "cardholderTitle": "Cardholder Agreement (U.S. Customers)",
+      "privacyTitle": "Privacy Policy",
+      "label": "Agreement acceptance",
+      "accept": "I have read and accept both agreements"
+    }
+  },
+  "verification": {
+    "continue": {
+      "eyebrow": "APPLICATION · IDENTITY",
+      "title": "Continue identity verification",
+      "description": "Three steps, about three minutes.",
+      "action": "Continue verification"
+    },
+    "preparing": "Preparing verification",
+    "status": {
+      "eyebrow": "APPLICATION",
+      "identity": "Identity",
+      "limit": "Limit",
+      "limitValue": "Up to USD 100,000",
+      "card": "Card",
+      "cardValue": "Visa Platinum",
+      "membership": "Annual membership",
+      "membershipValue": "USD 250",
+      "application": "Application",
+      "closed": "Closed",
+      "underReview": {
+        "title": "Checking your identity",
+        "description": "This usually takes a few minutes. You can close this page — we message you on WhatsApp the moment it is done.",
+        "label": "Under review"
+      },
+      "verified": {
+        "title": "Account pending",
+        "description": "Your identity is verified. Your account opens once your adviser confirms the introduction and we set your limit.",
+        "label": "Verified"
+      },
+      "rejected": {
+        "title": "We could not open your account",
+        "description": "We are not able to proceed at this time. Support can tell you what is needed and whether it can be resolved.",
+        "label": "Rejected"
+      }
+    }
+  },
+  "home": {
+    "statement": {
+      "today": "Today",
+      "days_one": "{{count}} day",
+      "days_other": "{{count}} days",
+      "dueSummary": "until your statement is issued, then {{amount}} is due by {{date}}.",
+      "available": "Available to spend",
+      "periodDue": "This period, due {{date}}",
+      "period": "This period",
+      "loadError": "Unable to load balance. Try again.",
+      "dueDate": "Due date",
+      "dueDateInfoLabel": "About due date",
+      "dueDateInfo": "Your statement is issued on the 1st of every month and is due on the 5th. The amount is fixed on the 1st — anything spent afterwards falls on the next statement. Charges begin three working days after the due date.",
+      "payNow": "Pay now",
+      "makePayment": "Make a payment"
+    },
+    "activity": "Activity",
+    "cards": {
+      "title": "Your cards",
+      "count_one": "{{count}} of 3 cards. All issued in your name. Each has its own number and freezes on its own.",
+      "count_other": "{{count}} of 3 cards. All issued in your name. Each has its own number and freezes on its own.",
+      "new": "New",
+      "empty": "No cards yet.",
+      "showing": "Showing",
+      "cardAlt": "XPlace Visa Platinum card",
+      "details": "Card details",
+      "number": "Card number",
+      "expires": "Expires",
+      "securityCode": "Security code",
+      "hidesIn": "Hides in {{seconds}}s",
+      "hideDetails": "Hide card details",
+      "showDetails": "Show card details",
+      "readyWallet": "Ready for Apple Pay and Google Pay",
+      "activate": "Activate",
+      "freeze": "Freeze",
+      "unfreeze": "Unfreeze",
+      "rename": "Rename",
+      "setPin": "Set PIN",
+      "changePin": "Change PIN",
+      "status": {
+        "active": "Active",
+        "frozen": "Frozen",
+        "manufacturing": "Manufacturing",
+        "inTransit": "In transit",
+        "shouldBeDelivered": "Should be delivered",
+        "notActivated": "Not activated"
+      },
+      "kind": {
+        "virtual": "Virtual",
+        "physical": "Physical"
+      },
+      "errors": {
+        "load": "Unable to load cards. Try again.",
+        "status": "Unable to update card status. Try again.",
+        "issue": "Unable to issue card. Try again.",
+        "pin": "Unable to update PIN. Try again.",
+        "details": "Unable to load card details. Try again."
+      },
+      "notifications": {
+        "activated": "Card activated",
+        "frozen": "Card frozen",
+        "issued": "Card issued",
+        "renamed": "Card renamed",
+        "unfrozen": "Card unfrozen",
+        "pinUpdated": "PIN updated"
+      }
+    },
+    "cardDetails": {
+      "copy": "Copy"
+    },
+    "gettingStarted": {
+      "title": "Get started",
+      "walletTitle": "Add to Apple Pay and Google Pay",
+      "walletDescription": "Pay from your phone in seconds",
+      "physicalTitle": "Order your physical card",
+      "physicalDescription": "Delivered by courier in up to 7 working days"
+    },
+    "newCard": {
+      "title": "New card",
+      "description": "Ready to use immediately on the same credit line.",
+      "name": "Card name",
+      "issuing": "Issuing card"
+    },
+    "renameCard": {
+      "title": "Rename card",
+      "description": "For your reference only. The name printed on the card does not change.",
+      "renaming": "Renaming card"
+    },
+    "delivery": {
+      "phoneCountry": "Select phone number country",
+      "title": "Delivery address",
+      "description": "Where should we send it? Couriers cannot deliver to a PO box.",
+      "address": "Address",
+      "addressPlaceholder": "Building and street",
+      "apartment": "Apartment or floor",
+      "regionPlaceholder": "Dubai",
+      "optional": "Optional",
+      "city": "City",
+      "cityPlaceholder": "Dubai",
+      "postcode": "Postcode",
+      "country": "Country",
+      "orderFee": "A {{amount}} card fee is charged to your account when you place the order. By ordering, you accept this charge.",
+      "order": "Order card",
+      "ordering": "Ordering physical card",
+      "region": "State / region",
+      "errors": {
+        "request": "Unable to complete the request. Please try again.",
+        "postcode": "Enter a valid postcode for the selected country.",
+        "phone": "Enter a valid phone number for the selected country.",
+        "tooLong": "This value is too long.",
+        "invalid": "Check this field.",
+        "recipient": "Cardholder details are unavailable. Please try again later.",
+        "balance": "Insufficient balance.",
+        "credit": "Your credit line is unavailable.",
+        "limit": "Card issuance limit reached. Contact support.",
+        "unavailable": "Physical card ordering is currently unavailable.",
+        "existing": "A physical card order or a card awaiting activation already exists.",
+        "failed": "The card could not be issued. Contact support.",
+        "refresh": "Card issued. Unable to refresh the card list yet. Please try again.",
+        "rename": "Card issued, but its name could not be saved. You can rename it from the card menu.",
+        "save": "The draft could not be saved. Your entries are still available in this session.",
+        "checking": "Checking the payment result. Please wait or refresh."
+      },
+      "phone": "Phone number"
+    },
+    "activation": {
+      "title": "Activate physical card",
+      "description": "Enter the last four digits and expiry date printed on the card.",
+      "lastFour": "Last four digits",
+      "expiry": "Expiry",
+      "fourDigits": "Enter four digits",
+      "validExpiry": "Enter a valid expiry date",
+      "errors": {
+        "request": "Unable to activate card. Try again.",
+        "mismatch": "Card details do not match. Check the digits and expiry date.",
+        "locked": "Too many incorrect attempts. Try again later or contact support."
+      }
+    },
+    "pin": {
+      "confirmTitle": "Confirm PIN",
+      "changeTitle": "Change PIN",
+      "setTitle": "Set PIN",
+      "confirmDescription": "Enter the same four digits again",
+      "chooseDescription": "Choose a four-digit PIN for {{card}}",
+      "label": "PIN",
+      "incomplete": "Enter a four-digit PIN",
+      "mismatch": "PINs do not match",
+      "saving": "Saving PIN",
+      "errors": {
+        "fourDigits": "PIN must be 4 digits.",
+        "repeated": "PIN cannot contain repeated numbers.",
+        "sequence": "PIN cannot be a simple sequence.",
+        "consecutive": "PIN cannot have more than 2 consecutive identical digits.",
+        "weak": "PIN pattern is too weak.",
+        "alternating": "PIN cannot have an alternating pattern."
+      }
+    },
+    "paymentPlans": {
+      "title": "Payment plans",
+      "description": "Purchases you chose to pay over time. Instalments are added to each statement.",
+      "openDetails": "Open {{merchant}} payment plan details",
+      "startAria": "Start a payment plan for {{merchant}}",
+      "settleAria": "Settle {{merchant}} payment plan",
+      "progressLabel": "{{merchant}} payment plan progress",
+      "summary": "{{months}} months · {{remaining}} of {{total}} remaining · from {{date}}",
+      "monthly": "{{amount}}/mo",
+      "monthlyLabel": "Monthly",
+      "perMonth": "/mo",
+      "aprFixed": "{{rate}}% APR fixed",
+      "remainingOf": "remaining of {{total}}",
+      "term": "Term",
+      "rate": "Rate",
+      "planFee": "Plan fee",
+      "progress": "Progress",
+      "paid": "{{percent}}% paid",
+      "settleToday": "Settle early today",
+      "settleInfo": "You can settle this plan in full at any time. The fixed plan fee still applies, and settling early frees your available limit sooner.",
+      "settleAction": "Settle plan now · {{amount}}",
+      "startTitle": "Pay over time",
+      "totalRepayable": "Total repayable",
+      "startAction": "Start plan — {{amount}}/mo",
+      "termsLabel": "Payment plan terms",
+      "months_one": "{{count}} month",
+      "months_other": "{{count}} months",
+      "totalCost": "{{total}} total · {{cost}} cost",
+      "settleTitle": "Settle plan now",
+      "settleDescription": "Pay the full remaining balance today, including the fixed plan fee. This closes the plan and frees your available limit.",
+      "confirm": "Confirm · {{amount}}",
+      "errors": {
+        "load": "Payment plans are unavailable. Try again.",
+        "update": "Unable to update the plan. Try again."
+      },
+      "notifications": {
+        "started": "PLAN STARTED · {{amount}}/MO",
+        "settled": "PLAN SETTLED"
+      }
+    },
+    "concierge": {
+      "cardholderInfo": "To put a card in someone else's name, they must complete their own verification. Message concierge and we'll arrange it.",
+      "title": "Need something?",
+      "description": "Concierge answers around the clock in your language.",
+      "message": "Message concierge",
+      "limitReview": "Limit review"
+    }
+  },
+  "transactions": {
+    "title": "Transactions",
+    "periodsLabel": "Transaction periods",
+    "thisPeriod": "This period",
+    "spent": "Spent",
+    "due": "Due {{date}}",
+    "count_one": "{{count}} transaction",
+    "count_other": "{{count}} transactions",
+    "listLabel": "Transactions",
+    "loadingList": "Loading transactions",
+    "empty": "No activity. Start spending to view",
+    "planTag": "PLAN",
+    "openDetails": "Open {{merchant}} transaction details",
+    "reversedAmount": "{{amount}}, reversed",
+    "payOverTime": "Pay over time",
+    "status": {
+      "completed": "Completed",
+      "pending": "Pending",
+      "refunded": "Refunded",
+      "declined": "Declined",
+      "reversed": "Reversed"
+    },
+    "details": {
+      "category": "Category",
+      "date": "Date",
+      "location": "Location",
+      "card": "Card",
+      "rate": "Rate",
+      "plan": "Plan",
+      "refundedLine1": "Refunded by the merchant.",
+      "refundedLine2": "Credited to this statement.",
+      "declineReasons": {
+        "insufficientFunds": "Insufficient funds",
+        "limits": "Limits Exceeded",
+        "blockedMerchant": "Blocked merchant",
+        "incorrectCardData": "Please check card details and try again",
+        "tryAgain": "Please try again in a moment"
+      },
+      "reversedLine1": "Pre-authorisation released by the merchant.",
+      "reversedLine2": "Nothing was charged.",
+      "planLine": "On a pay-over-time plan",
+      "remaining": "{{amount}} remaining."
+    },
+    "errors": {
+      "load": "Unable to load transactions. Try again."
+    }
+  },
+  "payment": {
+    "loadingCryptoDetails": "Preparing your crypto payment details",
+    "beneficiaryAddress": "Beneficiary address",
+    "bankAddress": "Bank address",
+    "accountNumber": "Account number",
+    "iban": "IBAN",
+    "swift": "SWIFT / BIC",
+    "reference": "Reference",
+    "routingNumber": "Routing number",
+    "currency": "Currency",
+    "loadingBankDetails": "Preparing your bank details",
+    "detailsWaitExpired": "Payment details are taking longer than expected",
+    "bankUnavailable": "Bank details are currently unavailable",
+    "contactConcierge": "Please message concierge for help with your account details.",
+    "title": "Make a payment",
+    "method": "Payment method",
+    "rates": "{{currency}} RATES",
+    "fxRate": "FX rate",
+    "statementIn": "Amount in {{currency}}",
+    "swiftTransferTo": "SWIFT transfer to",
+    "sepaTransferTo": "SEPA transfer to",
+    "cryptoTransferTo": "Crypto transfer to",
+    "bankTransfer": "Bank transfer",
+    "crypto": "Crypto",
+    "statementBalance": "Statement balance",
+    "statementDate": "Statement date",
+    "transferTo": "Transfer to",
+    "beneficiaryName": "Beneficiary",
+    "bank": "Bank",
+    "copyDetail": "Copy payment detail",
+    "cryptoDescription": "Send {{asset}} on {{network}} to your personal deposit address below. {{asset}} is credited 1:1 to USD. Funds appear on your account once the network confirms and processing completes — within 24 hours.",
+    "qrAlt": "QR code for the {{asset}} deposit address",
+    "statementNotice": "This amount covers your total unpaid balance across all periods. Payments are applied to the oldest debt first. New spending or charges before the transfer arrives may change the remaining balance.",
+    "statementPlans": {
+      "toggle": "{{action}} payment plan statement adjustments totalling {{amount}}",
+      "expand": "Expand",
+      "collapse": "Collapse",
+      "lower": "Lower this statement by {{amount}}",
+      "description": "Spread a large purchase over time and only its first instalment stays on this statement.",
+      "thisMonth": "of this month"
+    }
+  }
+}

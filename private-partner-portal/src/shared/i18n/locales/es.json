@@ -1,0 +1,59 @@
+{
+  "common": {
+    "actions": {
+      "back": "Atrás",
+      "cancel": "Cancelar",
+      "close": "Cerrar",
+      "continue": "Continuar",
+      "copy": "Copiar",
+      "refreshPage": "Actualizar página",
+      "retry": "Intentar de nuevo",
+      "save": "Guardar",
+      "show": "Mostrar",
+      "viewAll": "Ver todo"
+    },
+    "errors": {
+      "required": "Este campo es obligatorio",
+      "selectToContinue": "Selecciona una opción para continuar",
+      "unexpected": "Algo salió mal. Inténtalo de nuevo."
+    },
+    "copied": "COPIADO",
+    "loading": "Cargando",
+    "notAvailable": "No disponible",
+    "notAvailableShort": "N/D"
+  },
+  "shell": {
+    "language": {
+      "change": "Cambiar idioma, actual: {{language}}",
+      "english": "English",
+      "russian": "Русский",
+      "french": "Français",
+      "spanish": "Español"
+    }
+  },
+  "route": {
+    "errorTitle": "Algo salió mal.",
+    "errorDescription": "Actualiza la página e inténtalo de nuevo."
+  },
+  "auth": {
+    "setPassword": {
+      "requirements": "Mínimo 8 caracteres. Evita contraseñas comunes o compuestas solo por números. La nueva contraseña debe ser diferente de la actual."
+    },
+    "errors": {
+      "invalidCredentials": "Correo electrónico o contraseña incorrectos.",
+      "accountLocked": "Demasiados intentos. Inténtalo más tarde.",
+      "rateLimited": "Demasiadas solicitudes. Inténtalo más tarde.",
+      "invalidPassword": "Usa al menos 8 caracteres. Evita contraseñas comunes o compuestas solo por números y elige una diferente de la actual.",
+      "invalidRequest": "Revisa los datos introducidos e inténtalo de nuevo.",
+      "network": "No se pudo conectar. Revisa tu conexión e inténtalo de nuevo.",
+      "csrf": "No se pudo confirmar la solicitud. Inténtalo de nuevo.",
+      "twoFactorRequired": "No se pudo cerrar la sesión. Inténtalo más tarde.",
+      "unexpected": "Algo salió mal. Inténtalo de nuevo."
+    }
+  },
+  "profile": {
+    "password": {
+      "requirements": "Mínimo 8 caracteres. Evita contraseñas comunes o compuestas solo por números. La nueva contraseña debe ser diferente de la actual."
+    }
+  }
+}

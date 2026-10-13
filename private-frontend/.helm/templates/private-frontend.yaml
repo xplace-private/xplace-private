@@ -1,0 +1,198 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/component: private-frontend
+  name: private-frontend
+spec:
+  replicas: {{ .Values.frontend.replicas }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app.kubernetes.io/component: private-frontend
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/component: private-frontend
+    spec:
+{{- with .Values.nodeSelector }}
+      nodeSelector:
+{{ toYaml . | indent 8 }}
+{{- end }}
+{{- with .Values.tolerations }}
+      tolerations:
+{{ toYaml . | indent 8 }}
+{{- end }}
+{{- with .Values.frontend.topologySpreadConstraints }}
+      topologySpreadConstraints:
+{{ toYaml . | indent 8 }}
+{{- end }}
+      automountServiceAccountToken: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 101
+        runAsGroup: 101
+        fsGroup: 101
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+        - name: private-frontend
+          image: {{ index .Values.werf.image "private-frontend" }}
+          # Штатный entrypoint правит /etc/nginx и падает на readOnlyRootFilesystem.
+          command: [ "nginx", "-g", "daemon off;" ]
+          securityContext:
+            readOnlyRootFilesystem: true
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          startupProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            periodSeconds: 2
+            failureThreshold: 15
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            periodSeconds: 30
+            timeoutSeconds: 5
+            failureThreshold: 3
+          lifecycle:
+            preStop:
+              exec:
+                command: [ "sleep", "5" ]
+          volumeMounts:
+            - name: tmp
+              mountPath: /tmp
+            - name: nginx-cache
+              mountPath: /var/cache/nginx
+{{- if .Values.frontend.resources }}
+          resources:
+{{ toYaml .Values.frontend.resources | indent 12 }}
+{{- end }}
+      imagePullSecrets:
+        - name: regcred
+      restartPolicy: Always
+      volumes:
+        - name: tmp
+          emptyDir: {}
+        - name: nginx-cache
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/component: private-frontend
+  name: private-frontend
+spec:
+  ports:
+    - name: http
+      port: 8080
+      targetPort: http
+  selector:
+    app.kubernetes.io/component: private-frontend
+{{- if and (not .Values.frontend.internal.suffix) (not .Values.frontend.external.host) }}
+{{- fail "set frontend.internal.suffix or frontend.external.host" }}
+{{- end }}
+{{- if .Values.frontend.internal.suffix }}
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  labels:
+    app.kubernetes.io/component: private-frontend
+  name: private-frontend-internal
+spec:
+  parentRefs:
+    - name: gateway-internal
+      namespace: envoy-gateway-system
+  hostnames:
+    - private-frontend.{{ .Values.frontend.internal.suffix }}
+  rules:
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /
+      backendRefs:
+        - name: private-frontend
+          port: 8080
+{{- end }}
+{{- if .Values.frontend.external.host }}
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  labels:
+    app.kubernetes.io/component: private-frontend
+  name: private-frontend-external
+spec:
+  parentRefs:
+    - name: gateway-external
+      namespace: envoy-gateway-system
+      sectionName: {{ required "frontend.external.listeners.https is required" .Values.frontend.external.listeners.https }}
+  hostnames:
+    - {{ .Values.frontend.external.host }}
+  rules:
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /
+      backendRefs:
+        - name: private-frontend
+          port: 8080
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  labels:
+    app.kubernetes.io/component: private-frontend
+  name: private-frontend-external-redirect
+spec:
+  parentRefs:
+    - name: gateway-external
+      namespace: envoy-gateway-system
+      sectionName: {{ required "frontend.external.listeners.http is required" .Values.frontend.external.listeners.http }}
+  hostnames:
+    - {{ .Values.frontend.external.host }}
+  rules:
+    # ACME uses an exact-path route, which outranks this prefix match and keeps renewals working.
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /
+      filters:
+        - type: RequestRedirect
+          requestRedirect:
+            scheme: https
+            statusCode: 301
+{{- end }}
+{{ if .Values.frontend.pdb.enabled }}
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  labels:
+    app.kubernetes.io/component: private-frontend
+  name: private-frontend
+spec:
+  maxUnavailable: {{ .Values.frontend.pdb.maxUnavailable }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/component: private-frontend
+{{ end }}

@@ -1,0 +1,85 @@
+import type { Transaction } from './model/transaction'
+
+const detailFields = {
+  source: 'card',
+  type: 'card',
+  isCredit: false,
+  category: 'Travel',
+  date: '13 August, 09:41',
+  location: 'Dubai, AE',
+  declineReasonCategory: null,
+  card: 'Virtual · •••• 4417',
+  rate: '1 USD = 3.6507 AED',
+} as const
+
+export const recentTransactions: readonly Transaction[] = [
+  {
+    ...detailFields,
+    id: 'emirates-airlines-12-aug-1422',
+    merchant: 'Emirates Airlines',
+    details: '12 Aug · 14:22 · Dubai, AE',
+    amount: 'USD 2,840',
+    amountCents: 284000,
+    currency: 'USD',
+    convertedAmount: 'AED 10,368',
+    state: 'completed',
+  },
+  {
+    ...detailFields,
+    id: 'bulgari-hotel-12-aug-0910',
+    merchant: 'Bulgari Hotel',
+    details: '12 Aug · 09:10 · Dubai, AE',
+    amount: 'USD 1,240.00',
+    amountCents: 124000,
+    currency: 'USD',
+    convertedAmount: 'AED 4,553.10',
+    state: 'pending',
+  },
+  {
+    ...detailFields,
+    id: 'zuma-11-aug-2105',
+    merchant: 'Zuma',
+    details: '11 Aug · 21:05 · London, GB',
+    amount: 'USD 412.50',
+    amountCents: 41250,
+    currency: 'USD',
+    convertedAmount: 'GBP 324',
+    state: 'refunded',
+  },
+  {
+    ...detailFields,
+    id: 'harrods-11-aug-2105',
+    merchant: 'Harrods',
+    details: '11 Aug · 21:05 · London, GB',
+    amount: 'USD 2,000.00',
+    amountCents: 200000,
+    currency: 'USD',
+    state: 'reversed',
+  },
+  {
+    ...detailFields,
+    id: 'the-ned-11-aug-2105',
+    merchant: 'The Ned',
+    details: '11 Aug · 21:05 · London, GB',
+    amount: 'USD 1,960',
+    amountCents: 196000,
+    currency: 'USD',
+    convertedAmount: 'GBP 1,539.55',
+    state: 'declined',
+    declineReasonCategory: 'limits',
+  },
+]
+
+export const allTransactions: readonly Transaction[] = [
+  {
+    ...detailFields,
+    id: 'late-payment-charge-12-aug',
+    merchant: 'Late payment charge',
+    details: '12 Aug',
+    amount: 'USD 2,840',
+    amountCents: 284000,
+    currency: 'USD',
+    state: 'completed',
+  },
+  ...recentTransactions,
+]

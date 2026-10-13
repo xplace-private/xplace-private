@@ -1,0 +1,504 @@
+{
+  "common": {
+    "brandEyebrow": "XPLACE PRIVATE",
+    "actions": {
+      "account": "Compte",
+      "back": "Retour",
+      "cancel": "Annuler",
+      "close": "Fermer",
+      "continue": "Continuer",
+      "copy": "Copier",
+      "dispute": "Contester",
+      "refreshPage": "Actualiser la page",
+      "retry": "Réessayer",
+      "save": "Enregistrer",
+      "show": "Afficher",
+      "signOut": "Se déconnecter",
+      "viewAll": "Tout afficher"
+    },
+    "errors": {
+      "required": "Ce champ est obligatoire",
+      "selectToContinue": "Sélectionnez une option pour continuer",
+      "unexpected": "Un problème est survenu. Veuillez réessayer."
+    },
+    "copied": "COPIÉ",
+    "loading": "Chargement",
+    "notAvailable": "Indisponible",
+    "notAvailableShort": "N/D",
+    "selectCountry": "Sélectionnez un pays"
+  },
+  "shell": {
+    "openWhatsApp": "Ouvrir WhatsApp",
+    "concierge": "Concierge",
+    "agreement": "Accord",
+    "privacy": "Confidentialité",
+    "language": {
+      "change": "Changer de langue, langue actuelle : {{language}}",
+      "english": "English",
+      "russian": "Русский",
+      "french": "Français",
+      "spanish": "Español"
+    }
+  },
+  "route": {
+    "errorTitle": "Un problème est survenu.",
+    "errorDescription": "Actualisez la page et réessayez.",
+    "loadingAccount": "Chargement du compte"
+  },
+  "auth": {
+    "authenticator": {
+      "eyebrow": "Configuration 2FA",
+      "setupTitle": "Scannez le code QR",
+      "setupDescription": "Ouvrez votre application d’authentification et scannez ce code ou copiez la clé manuellement.",
+      "confirmTitle": "Saisissez le code à 6 chiffres",
+      "confirmDescription": "Depuis votre application d’authentification. Les codes changent toutes les 30 secondes.",
+      "loginTitle": "Authentification 2FA",
+      "loginDescription": "Saisissez le code actuel de votre application d’authentification à deux facteurs. Les codes changent régulièrement pour votre sécurité.",
+      "step1": "Téléchargez Google Authenticator, Authy ou une application TOTP",
+      "step2": "Appuyez sur «Ouvrir l’application d’authentification» ci-dessous ou ouvrez l’application et choisissez «Saisir une clé de configuration»",
+      "step3": "Vérifiez que le compte (XPlace) a été ajouté",
+      "step4": "Saisissez le code à 6 chiffres affiché par l’application",
+      "open": "Ouvrir l’application d’authentification",
+      "hint": "Sur iPhone, Mots de passe d’Apple peut s’ouvrir. Pour les autres applications, copiez la clé.",
+      "qr": "Scannez pour ajouter XPlace à votre application d’authentification",
+      "qrUnavailable": "Code QR indisponible. Copiez la clé de configuration ci-dessous.",
+      "setupKey": "Clé de configuration",
+      "copyKey": "Copier la clé d’authentification",
+      "copyError": "Impossible de copier. Sélectionnez et copiez la clé manuellement.",
+      "setupError": "Impossible de charger la configuration. Réessayez.",
+      "paste": "Coller le code",
+      "pasteError": "Impossible de lire le presse-papiers. Collez ou saisissez le code manuellement.",
+      "incorrectCode": "Code incorrect",
+      "tooManyAttempts": "Trop de tentatives. Réessayez plus tard.",
+      "verify": "Vérifier",
+      "signOut": "Se déconnecter"
+    },
+    "phone": {
+      "title": "Faire une demande ou se connecter",
+      "description": "Saisissez votre numéro de mobile. Nous vous enverrons un code à six chiffres sur WhatsApp.",
+      "countryPicker": "Choisir l’indicatif. Sélection : {{country}} {{code}}",
+      "searchCountry": "Rechercher un pays ou un indicatif",
+      "noCountries": "Aucun pays trouvé",
+      "inputLabel": "Numéro de mobile",
+      "requesting": "Envoi du code"
+    },
+    "code": {
+      "title": "Saisissez votre code",
+      "sentTo": "Envoyé sur WhatsApp au {{phone}}.",
+      "label": "Code à six chiffres",
+      "verifying": "Vérification du code",
+      "requesting": "Envoi du code",
+      "resend": "Renvoyer le code",
+      "resendIn": "Renvoyer dans {{time}}",
+      "resendAvailableIn": "Nouveau code disponible dans {{time}}",
+      "differentNumber": "Utiliser un autre numéro",
+      "hourShort": "h",
+      "minuteShort": "min",
+      "secondShort": "s",
+      "unitSeparator": "\u00a0"
+    },
+    "recovery": {
+      "title": "Impossible de restaurer la session",
+      "description": "Impossible de restaurer la session. Réessayez."
+    },
+    "errors": {
+      "phoneRequired": "Saisissez un numéro pour continuer",
+      "codeRequired": "Saisissez le code pour continuer",
+      "continue": "Impossible de continuer. Réessayez.",
+      "retryAfter": "Réessayez dans {{time}}.",
+      "invalidPhone": "Numéro de téléphone non valide.",
+      "phoneTooLong": "Le numéro de téléphone est trop long.",
+      "invalidPhoneFormat": "Saisissez un numéro international valide.",
+      "whatsappUnavailable": "La vérification WhatsApp est indisponible.",
+      "invalidOrExpiredCode": "Code incorrect ou expiré.",
+      "invalidCode": "Code incorrect. Saisissez un code valide pour continuer",
+      "signOut": "Impossible de vous déconnecter. Réessayez."
+    }
+  },
+  "onboarding": {
+    "stepEyebrow": "DEMANDE · ÉTAPE {{step}} SUR 6",
+    "continuing": "Traitement en cours",
+    "residency": {
+      "title": "Où résidez-vous ?",
+      "description": "Les accords et contrôles d’identité varient selon le pays.",
+      "label": "Résidence",
+      "us": "États-Unis",
+      "world": "Reste du monde"
+    },
+    "occupation": {
+      "title": "Quelle est votre profession ?",
+      "description": "Recherchez dans la liste ou choisissez Autre.",
+      "search": "Rechercher une profession",
+      "loading": "Chargement des professions",
+      "empty": "Aucune profession trouvée.",
+      "label": "Profession",
+      "loadError": "Impossible de charger les professions. Réessayez."
+    },
+    "income": {
+      "title": "Quel est votre revenu annuel ?",
+      "description": "En dollars américains, avant impôts.",
+      "label": "Revenu annuel",
+      "under25": "Moins de 25 000 USD",
+      "from25To50": "25 000 – 50 000 USD",
+      "from50To100": "50 000 – 100 000 USD",
+      "from100To180": "100 000 – 180 000 USD",
+      "over180": "Plus de 180 000 USD"
+    },
+    "spend": {
+      "title": "Quelles dépenses mensuelles prévoyez-vous ?",
+      "description": "Une estimation suffit. Elle ne détermine pas votre limite.",
+      "label": "Dépenses mensuelles prévues",
+      "under1": "Moins de 1 000 USD",
+      "from1To5": "1 000 – 5 000 USD",
+      "from5To25": "5 000 – 25 000 USD",
+      "from25To50": "25 000 – 50 000 USD",
+      "over50": "Plus de 50 000 USD"
+    },
+    "purpose": {
+      "title": "À quoi servira ce compte ?",
+      "label": "Utilisation du compte",
+      "personal": "Dépenses personnelles",
+      "business": "Dépenses professionnelles",
+      "investments": "Investissements",
+      "other": "Autre"
+    },
+    "agreements": {
+      "title": "Avant de vérifier votre identité",
+      "description": "Lisez et acceptez les accords applicables à votre compte.",
+      "cardholderTitle": "Contrat du titulaire de carte (clients américains)",
+      "privacyTitle": "Politique de confidentialité",
+      "label": "Acceptation des accords",
+      "accept": "J’ai lu et j’accepte les deux accords"
+    }
+  },
+  "verification": {
+    "continue": {
+      "eyebrow": "DEMANDE · IDENTITÉ",
+      "title": "Poursuivre la vérification d’identité",
+      "description": "Trois étapes, environ trois minutes.",
+      "action": "Poursuivre la vérification"
+    },
+    "preparing": "Préparation de la vérification",
+    "status": {
+      "eyebrow": "DEMANDE",
+      "identity": "Identité",
+      "limit": "Limite",
+      "limitValue": "Jusqu’à 100 000 USD",
+      "card": "Carte",
+      "cardValue": "Visa Platinum",
+      "membership": "Adhésion annuelle",
+      "membershipValue": "250 USD",
+      "application": "Demande",
+      "closed": "Clôturée",
+      "underReview": {
+        "title": "Vérification de votre identité",
+        "description": "Cela prend généralement quelques minutes. Vous pouvez fermer cette page — nous vous écrirons sur WhatsApp dès que ce sera terminé.",
+        "label": "En cours d’examen"
+      },
+      "verified": {
+        "title": "Compte en attente",
+        "description": "Votre identité est vérifiée. Votre compte sera ouvert lorsque votre conseiller aura confirmé la mise en relation et que nous aurons fixé votre limite.",
+        "label": "Vérifiée"
+      },
+      "rejected": {
+        "title": "Nous n’avons pas pu ouvrir votre compte",
+        "description": "Nous ne sommes pas en mesure de poursuivre pour le moment. Le support peut vous indiquer ce qui est nécessaire et si la situation peut être résolue.",
+        "label": "Refusée"
+      }
+    }
+  },
+  "home": {
+    "statement": {
+      "today": "Aujourd’hui",
+      "days_one": "{{count}} jour",
+      "days_other": "{{count}} jours",
+      "dueSummary": "avant l’émission de votre relevé, puis {{amount}} sera dû le {{date}}.",
+      "available": "Disponible à dépenser",
+      "periodDue": "Période en cours, dû le {{date}}",
+      "period": "Période en cours",
+      "loadError": "Impossible de charger le solde. Réessayez.",
+      "dueDate": "Date d’échéance",
+      "dueDateInfoLabel": "À propos de l’échéance",
+      "dueDateInfo": "Votre relevé est émis le 1er de chaque mois et doit être réglé le 5. Le montant est fixé le 1er — toute dépense ultérieure figure sur le relevé suivant. Les frais commencent trois jours ouvrés après l’échéance.",
+      "payNow": "Payer maintenant",
+      "makePayment": "Effectuer un paiement"
+    },
+    "activity": "Activité",
+    "cards": {
+      "title": "Vos cartes",
+      "count_one": "{{count}} carte sur 3. Toutes sont émises à votre nom. Chacune a son propre numéro et se bloque séparément.",
+      "count_other": "{{count}} cartes sur 3. Toutes sont émises à votre nom. Chacune a son propre numéro et se bloque séparément.",
+      "new": "Nouvelle",
+      "empty": "Aucune carte pour le moment.",
+      "showing": "Affichage",
+      "cardAlt": "Carte XPlace Visa Platinum",
+      "details": "Détails de la carte",
+      "number": "Numéro de carte",
+      "expires": "Expiration",
+      "securityCode": "Cryptogramme",
+      "hidesIn": "Masqués dans {{seconds}} s",
+      "hideDetails": "Masquer les détails",
+      "showDetails": "Afficher les détails",
+      "readyWallet": "Compatible Apple Pay et Google Pay",
+      "activate": "Activer",
+      "freeze": "Bloquer",
+      "unfreeze": "Débloquer",
+      "rename": "Renommer",
+      "setPin": "Définir le code PIN",
+      "changePin": "Modifier le code PIN",
+      "status": {
+        "active": "Active",
+        "frozen": "Bloquée",
+        "manufacturing": "En fabrication",
+        "inTransit": "En livraison",
+        "shouldBeDelivered": "Devrait être livrée",
+        "notActivated": "Non activée"
+      },
+      "kind": {
+        "virtual": "Virtuelle",
+        "physical": "Physique"
+      },
+      "errors": {
+        "load": "Impossible de charger les cartes. Réessayez.",
+        "status": "Impossible de modifier l’état de la carte. Réessayez.",
+        "issue": "Impossible d’émettre la carte. Réessayez.",
+        "pin": "Impossible de modifier le code PIN. Réessayez.",
+        "details": "Impossible de charger les détails de la carte. Réessayez."
+      },
+      "notifications": {
+        "activated": "Carte activée",
+        "frozen": "Carte bloquée",
+        "issued": "Carte émise",
+        "renamed": "Carte renommée",
+        "unfrozen": "Carte débloquée",
+        "pinUpdated": "Code PIN modifié"
+      }
+    },
+    "cardDetails": {
+      "copy": "Copier"
+    },
+    "gettingStarted": {
+      "title": "Pour commencer",
+      "walletTitle": "Ajouter à Apple Pay et Google Pay",
+      "walletDescription": "Payez avec votre téléphone en quelques secondes",
+      "physicalTitle": "Commander votre carte physique",
+      "physicalDescription": "Livrée par coursier sous 7 jours ouvrés"
+    },
+    "newCard": {
+      "title": "Nouvelle carte",
+      "description": "Utilisable immédiatement avec la même ligne de crédit.",
+      "name": "Nom de la carte",
+      "issuing": "Émission de la carte"
+    },
+    "renameCard": {
+      "title": "Renommer la carte",
+      "description": "Pour vous repérer uniquement. Le nom imprimé sur la carte ne change pas.",
+      "renaming": "Modification du nom"
+    },
+    "delivery": {
+      "phoneCountry": "Sélectionnez le pays du numéro de téléphone",
+      "title": "Adresse de livraison",
+      "description": "Où devons-nous l’envoyer ? Les coursiers ne livrent pas aux boîtes postales.",
+      "address": "Adresse",
+      "addressPlaceholder": "Numéro et nom de rue",
+      "apartment": "Appartement ou étage",
+      "regionPlaceholder": "Dubaï",
+      "optional": "Facultatif",
+      "city": "Ville",
+      "cityPlaceholder": "Dubaï",
+      "postcode": "Code postal",
+      "country": "Pays",
+      "orderFee": "Des frais de {{amount}} seront débités de votre compte lors de la commande. En commandant, vous acceptez ces frais.",
+      "order": "Commander la carte",
+      "ordering": "Commande de la carte physique",
+      "region": "État / région",
+      "phone": "Numéro de téléphone",
+      "errors": {
+        "checking": "Vérification du paiement. Patientez ou actualisez.",
+        "request": "Impossible de traiter la demande. Réessayez.",
+        "postcode": "Saisissez un code postal valide pour le pays sélectionné.",
+        "phone": "Saisissez un numéro valide pour le pays sélectionné.",
+        "tooLong": "Cette valeur est trop longue.",
+        "invalid": "Vérifiez ce champ.",
+        "recipient": "Les données du titulaire sont indisponibles. Réessayez plus tard.",
+        "balance": "Solde insuffisant.",
+        "credit": "Votre ligne de crédit est indisponible.",
+        "limit": "La limite d’émission de cartes est atteinte. Contactez le support.",
+        "unavailable": "La commande de cartes physiques est actuellement indisponible.",
+        "existing": "Une commande ou une carte en attente d’activation existe déjà.",
+        "failed": "La carte n’a pas pu être émise. Contactez le support.",
+        "refresh": "Carte émise. Impossible d’actualiser la liste pour le moment. Réessayez.",
+        "rename": "Carte émise, mais son nom n’a pas été enregistré. Vous pouvez le modifier dans le menu de la carte.",
+        "save": "Le brouillon n’a pas pu être enregistré. Vos données restent disponibles jusqu’au rechargement de la page."
+      }
+    },
+    "activation": {
+      "title": "Activer la carte physique",
+      "description": "Saisissez les quatre derniers chiffres et la date d’expiration imprimés sur la carte.",
+      "lastFour": "Quatre derniers chiffres",
+      "expiry": "Expiration",
+      "fourDigits": "Saisissez quatre chiffres",
+      "validExpiry": "Saisissez une date d’expiration valide",
+      "errors": {
+        "request": "Impossible d’activer la carte. Réessayez.",
+        "mismatch": "Les informations de la carte ne correspondent pas. Vérifiez les chiffres et la date d’expiration.",
+        "locked": "Trop de tentatives incorrectes. Réessayez plus tard ou contactez l’assistance."
+      }
+    },
+    "pin": {
+      "confirmTitle": "Confirmer le code PIN",
+      "changeTitle": "Modifier le code PIN",
+      "setTitle": "Définir le code PIN",
+      "confirmDescription": "Saisissez à nouveau les quatre mêmes chiffres",
+      "chooseDescription": "Choisissez un code PIN à quatre chiffres pour {{card}}",
+      "label": "Code PIN",
+      "incomplete": "Saisissez un code PIN à quatre chiffres",
+      "mismatch": "Les codes PIN ne correspondent pas",
+      "saving": "Enregistrement du code PIN",
+      "errors": {
+        "fourDigits": "Le code PIN doit comporter 4 chiffres.",
+        "repeated": "Le code PIN ne peut pas contenir uniquement des chiffres identiques.",
+        "sequence": "Le code PIN ne peut pas être une suite simple.",
+        "consecutive": "Le code PIN ne peut pas contenir plus de 2 chiffres identiques consécutifs.",
+        "weak": "Ce code PIN est trop faible.",
+        "alternating": "Le code PIN ne peut pas suivre un motif alterné."
+      }
+    },
+    "paymentPlans": {
+      "title": "Paiements échelonnés",
+      "description": "Achats que vous avez choisi de régler en plusieurs fois. Les mensualités sont ajoutées à chaque relevé.",
+      "openDetails": "Ouvrir les détails du paiement échelonné chez {{merchant}}",
+      "startAria": "Échelonner le paiement chez {{merchant}}",
+      "settleAria": "Solder le paiement échelonné chez {{merchant}}",
+      "progressLabel": "Avancement du paiement échelonné chez {{merchant}}",
+      "summary": "{{months}} mois · {{remaining}} sur {{total}} restants · depuis le {{date}}",
+      "monthly": "{{amount}}/mois",
+      "monthlyLabel": "Mensualité",
+      "perMonth": "/mois",
+      "aprFixed": "TAEG fixe de {{rate}} %",
+      "remainingOf": "restants sur {{total}}",
+      "term": "Durée",
+      "rate": "Taux",
+      "planFee": "Frais du plan",
+      "progress": "Avancement",
+      "paid": "{{percent}} % payé",
+      "settleToday": "Solder aujourd’hui",
+      "settleInfo": "Vous pouvez solder ce plan à tout moment. Les frais fixes restent dus, mais un remboursement anticipé libère plus vite votre limite disponible.",
+      "settleAction": "Solder maintenant · {{amount}}",
+      "startTitle": "Payer en plusieurs fois",
+      "totalRepayable": "Total à rembourser",
+      "startAction": "Démarrer — {{amount}}/mois",
+      "termsLabel": "Conditions du paiement échelonné",
+      "months_one": "{{count}} mois",
+      "months_other": "{{count}} mois",
+      "totalCost": "{{total}} au total · coût : {{cost}}",
+      "settleTitle": "Solder le plan",
+      "settleDescription": "Payez aujourd’hui tout le solde restant, frais fixes inclus. Le plan sera clôturé et votre limite disponible sera libérée.",
+      "confirm": "Confirmer · {{amount}}",
+      "errors": {
+        "load": "Les paiements échelonnés sont indisponibles. Réessayez.",
+        "update": "Impossible de modifier le plan. Réessayez."
+      },
+      "notifications": {
+        "started": "PLAN DÉMARRÉ · {{amount}}/MOIS",
+        "settled": "PLAN SOLDÉ"
+      }
+    },
+    "concierge": {
+      "cardholderInfo": "Pour mettre une carte au nom d’une autre personne, celle-ci doit effectuer sa propre vérification. Écrivez au concierge et nous nous en chargerons.",
+      "title": "Besoin de quelque chose ?",
+      "description": "Le concierge vous répond 24 h/24 dans votre langue.",
+      "message": "Contacter le concierge",
+      "limitReview": "Révision de la limite"
+    }
+  },
+  "transactions": {
+    "title": "Transactions",
+    "periodsLabel": "Périodes de transaction",
+    "thisPeriod": "Période en cours",
+    "spent": "Dépensé",
+    "due": "Dû le {{date}}",
+    "count_one": "{{count}} transaction",
+    "count_other": "{{count}} transactions",
+    "listLabel": "Transactions",
+    "loadingList": "Chargement des transactions",
+    "empty": "Aucune activité. Commencez à utiliser la carte pour l’afficher",
+    "planTag": "PLAN",
+    "openDetails": "Ouvrir les détails de la transaction {{merchant}}",
+    "reversedAmount": "{{amount}}, annulé",
+    "payOverTime": "Payer en plusieurs fois",
+    "status": {
+      "completed": "Terminée",
+      "pending": "En attente",
+      "refunded": "Remboursée",
+      "declined": "Refusée",
+      "reversed": "Annulée"
+    },
+    "details": {
+      "category": "Catégorie",
+      "date": "Date",
+      "location": "Lieu",
+      "card": "Carte",
+      "rate": "Taux",
+      "plan": "Plan",
+      "refundedLine1": "Remboursée par le commerçant.",
+      "refundedLine2": "Créditée sur ce relevé.",
+      "declineReasons": {
+        "insufficientFunds": "Fonds insuffisants",
+        "limits": "Limites dépassées",
+        "blockedMerchant": "Commerçant bloqué",
+        "incorrectCardData": "Veuillez vérifier les informations de la carte et réessayer",
+        "tryAgain": "Veuillez réessayer dans un instant"
+      },
+      "reversedLine1": "Préautorisation levée par le commerçant.",
+      "reversedLine2": "Aucun montant n’a été débité.",
+      "planLine": "Paiement échelonné en cours",
+      "remaining": "Reste {{amount}}."
+    },
+    "errors": {
+      "load": "Impossible de charger les transactions. Réessayez."
+    }
+  },
+  "payment": {
+    "loadingCryptoDetails": "Préparation des coordonnées de paiement en cryptomonnaie",
+    "beneficiaryAddress": "Adresse du bénéficiaire",
+    "bankAddress": "Adresse de la banque",
+    "accountNumber": "Numéro de compte",
+    "iban": "IBAN",
+    "swift": "SWIFT / BIC",
+    "reference": "Référence",
+    "routingNumber": "Numéro de routage",
+    "currency": "Devise",
+    "loadingBankDetails": "Préparation de vos coordonnées bancaires",
+    "detailsWaitExpired": "La préparation des coordonnées de paiement prend plus de temps que prévu",
+    "bankUnavailable": "Les coordonnées bancaires sont indisponibles pour le moment",
+    "contactConcierge": "Contactez le concierge pour obtenir de l’aide avec les coordonnées de votre compte.",
+    "title": "Effectuer un paiement",
+    "method": "Mode de paiement",
+    "rates": "TAUX {{currency}}",
+    "fxRate": "Taux de change",
+    "statementIn": "Montant en {{currency}}",
+    "swiftTransferTo": "Virement SWIFT à",
+    "sepaTransferTo": "Virement SEPA à",
+    "cryptoTransferTo": "Transfert crypto à",
+    "bankTransfer": "Virement bancaire",
+    "crypto": "Crypto",
+    "statementBalance": "Solde du relevé",
+    "statementDate": "Date du relevé",
+    "transferTo": "Virement à",
+    "beneficiaryName": "Bénéficiaire",
+    "bank": "Banque",
+    "copyDetail": "Copier les coordonnées de paiement",
+    "cryptoDescription": "Envoyez {{asset}} via {{network}} à votre adresse de dépôt personnelle ci-dessous. {{asset}} est crédité à parité avec l’USD. Les fonds apparaissent sur votre compte une fois la confirmation du réseau et le traitement terminés — sous 24 heures.",
+    "qrAlt": "Code QR de l’adresse de dépôt {{asset}}",
+    "statementNotice": "Ce montant couvre votre solde total impayé sur toutes les périodes. Les paiements remboursent d’abord la dette la plus ancienne. De nouvelles dépenses ou de nouveaux frais avant réception du virement peuvent modifier le solde restant.",
+    "statementPlans": {
+      "toggle": "{{action}} les ajustements du relevé liés aux paiements échelonnés, soit {{amount}}",
+      "expand": "Afficher",
+      "collapse": "Réduire",
+      "lower": "Réduire ce relevé de {{amount}}",
+      "description": "Échelonnez un achat important : seule la première mensualité reste sur ce relevé.",
+      "thisMonth": "de ce mois"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@import "@fontsource-variable/geist";
+
+:root {
+  --background: #000;
+  --foreground: #fafafa;
+  --card: #0a0a0a;
+  --primary: #fff;
+  --primary-foreground: #171717;
+  --secondary: #a3a3a3;
+  --secondary-foreground: #fafafa;
+  --muted: #525252;
+  --muted-foreground: #a3a3a3;
+  --accent: #c9bda8;
+  --accent-foreground: #fafafa;
+  --destructive: #ff6467;
+  --positive: #7fb08a;
+  --warning: #c9a86a;
+  --border: #262626;
+  --popover: #262626;
+  --popover-foreground: #fafafa;
+  --ring: #737373;
+  --notice-accent: #c9bda8;
+  --notice-background: #0a0a0a;
+}
+
+html {
+  background: var(--background);
+  color: var(--foreground);
+  color-scheme: dark;
+}
+
+html:has([data-auth-screen]) {
+  scrollbar-width: none;
+}
+
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 100dvh;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body[data-scroll-locked] {
+  width: auto;
+}
+
+@theme inline {
+  --font-sans: 'Geist Variable', sans-serif;
+  --shadow-xs: 0 1px 2px 0 color-mix(in srgb, var(--background) 10%, transparent);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-positive: var(--positive);
+  --color-warning: var(--warning);
+  --color-border: var(--border);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-ring: var(--ring);
+  --color-notice-accent: var(--notice-accent);
+  --color-notice-background: var(--notice-background);
+}
+
+.app-toaster[data-x-position="center"] {
+  right: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  transform: none !important;
+}
+
+.app-toaster [data-sonner-toast] {
+  right: auto !important;
+  left: 50% !important;
+  translate: -50% 0;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

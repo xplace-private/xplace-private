@@ -1,0 +1,21 @@
+.git/
+.gitlab-ci.yml
+.helm/
+node_modules/
+dist/
+docs/
+coverage/
+junit.xml
+dockerconfig.json
+.pnpm/
+.pnpm-store/
+*.log
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+# Public VITE_ values, needed in the build context; every other .env stays out.
+!.env.dev
+!.env.staging
+!.env.production

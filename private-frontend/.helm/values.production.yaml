@@ -1,0 +1,7 @@
+frontend:
+  replicas: 2
+  external:
+    host: wise-wolves.x.place
+    listeners:
+      http: http-wise-wolves
+      https: https-wise-wolves

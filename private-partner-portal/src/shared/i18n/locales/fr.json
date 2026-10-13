@@ -1,0 +1,59 @@
+{
+  "common": {
+    "actions": {
+      "back": "Retour",
+      "cancel": "Annuler",
+      "close": "Fermer",
+      "continue": "Continuer",
+      "copy": "Copier",
+      "refreshPage": "Actualiser la page",
+      "retry": "Réessayer",
+      "save": "Enregistrer",
+      "show": "Afficher",
+      "viewAll": "Tout afficher"
+    },
+    "errors": {
+      "required": "Ce champ est obligatoire",
+      "selectToContinue": "Sélectionnez une option pour continuer",
+      "unexpected": "Un problème est survenu. Veuillez réessayer."
+    },
+    "copied": "COPIÉ",
+    "loading": "Chargement",
+    "notAvailable": "Indisponible",
+    "notAvailableShort": "N/D"
+  },
+  "shell": {
+    "language": {
+      "change": "Changer de langue, langue actuelle : {{language}}",
+      "english": "English",
+      "russian": "Русский",
+      "french": "Français",
+      "spanish": "Español"
+    }
+  },
+  "route": {
+    "errorTitle": "Un problème est survenu.",
+    "errorDescription": "Actualisez la page et réessayez."
+  },
+  "auth": {
+    "setPassword": {
+      "requirements": "Au moins 8 caractères. Évitez les mots de passe courants ou composés uniquement de chiffres. Le nouveau mot de passe doit être différent du mot de passe actuel."
+    },
+    "errors": {
+      "invalidCredentials": "Adresse e-mail ou mot de passe incorrect.",
+      "accountLocked": "Trop de tentatives. Réessayez plus tard.",
+      "rateLimited": "Trop de requêtes. Réessayez plus tard.",
+      "invalidPassword": "Utilisez au moins 8 caractères. Évitez les mots de passe courants ou uniquement numériques et choisissez un mot de passe différent du mot de passe actuel.",
+      "invalidRequest": "Vérifiez les informations saisies et réessayez.",
+      "network": "Connexion impossible. Vérifiez votre connexion et réessayez.",
+      "csrf": "Impossible de confirmer la requête. Réessayez.",
+      "twoFactorRequired": "Impossible de se déconnecter. Réessayez plus tard.",
+      "unexpected": "Une erreur est survenue. Réessayez."
+    }
+  },
+  "profile": {
+    "password": {
+      "requirements": "Au moins 8 caractères. Évitez les mots de passe courants ou composés uniquement de chiffres. Le nouveau mot de passe doit être différent du mot de passe actuel."
+    }
+  }
+}

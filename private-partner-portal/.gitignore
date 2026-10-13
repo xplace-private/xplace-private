@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+.pnpm/
+.pnpm-store/
+
+# Build output
+dist/
+.worktrees/
+.tanstack/
+
+# CI artifacts
+junit.xml
+e2e-junit.xml
+dockerconfig.json
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.auth/
+
+# Local environment
+.env
+.env.local
+.env.*.local
+
+# Logs and editor state
+*.log
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json

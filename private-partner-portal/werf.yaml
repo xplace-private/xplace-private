@@ -1,0 +1,15 @@
+configVersion: 1
+project: private-partner-portal
+---
+image: private-partner-portal
+dockerfile: Dockerfile
+staged: true
+args:
+  # Empty default is for render and cleanup, which never build; Dockerfile requires it.
+  BUILD_MODE: {{ env "BUILD_MODE" "" }}
+  SENTRY_RELEASE: {{ .Commit.Hash | quote }}
+{{- if env "SENTRY_AUTH_TOKEN" "" }}
+secrets:
+  - id: sentry_auth_token
+    env: SENTRY_AUTH_TOKEN
+{{- end }}
